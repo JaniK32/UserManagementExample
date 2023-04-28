@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+    h1 {
+        color: #369;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 250%;
+    }
+    h2, h3 {
+        color: #444;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+    }
+    body {
+        margin: 2em;
+    }
+    body, input[type="text"], button {
+        color: #333;
+        font-family: Cambria, Georgia, serif;
+        height: 25px;
+    }
+    button {
+        background-color: #8bbfdce1;
+        border: black;
+        border-radius: 20px;
+        cursor: pointer;
+        color: black;
+        font-size: 1.2rem;
+        height: 25px;
+        margin-left: 10px;
+    }
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+    button:disabled {
+        background-color: #eee;
+        color: #aaa;
+        cursor: auto;
+    }
+    li {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    label {
+        font-weight: bold;
+        font-size: 1.0rem;
+    }
+    span.txtfield {
+        margin-bottom: 10px;
+    }
+    span.addressfield {
+        font-size: 1.0rem;
+    }
+    div.status-ok{
+        color: green;
+    }
+    div.status-nok {
+        color: red;
+    }
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

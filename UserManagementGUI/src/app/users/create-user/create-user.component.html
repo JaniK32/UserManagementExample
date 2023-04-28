@@ -1,0 +1,19 @@
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">Create user</h2>
+            <input id="user-name" [(ngModel)]="user.name" placeholder="name (required)">
+            <input id="user-username" [(ngModel)]="user.username" placeholder="username (required)">
+            <input id="user-email" [(ngModel)]="user.email" placeholder="email">
+            <br/><br/>
+            <label for="user-address-street">Address:</label>
+            <br/>
+            <input id="user-address-street" [(ngModel)]="user.address.street" placeholder="street">
+            <input id="user-address-suite" [(ngModel)]="user.address.suite" placeholder="suite">
+            <input id="user-address-city" [(ngModel)]="user.address.city" placeholder="city">
+            <input id="user-address-zipcode" [(ngModel)]="user.address.zipcode" placeholder="zipcode">
+            <br/><br/>
+            <button type="button" class="button" (click)="create()">Create</button>
+        <br/><br/>
+        <div class="{{statusCode}}">{{statusMessage}}</div>
+    </div>
+</div>

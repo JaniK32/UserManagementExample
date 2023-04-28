@@ -1,0 +1,52 @@
+<div>
+    <h2>Users</h2>
+    <div *ngIf="errorMessage" class="status-nok">{{errorMessage}}</div>
+    <ul class="users">
+      <li *ngFor="let user of users">
+        <span style="margin-left: 10px;" class="name">{{user.name}} </span>
+        <span class="name txtfield">({{user.username}})</span>
+        <button type="button" (click)="toggleDetails(user.id)">
+            Show details
+        </button>
+        <button type="button" (click)="delete(user.id)">
+            Delete
+        </button>
+        <div *ngIf="showDetails.get(user.id)">
+            <table border="1">
+                <tr spellcheck="">
+                    <td>
+                        <label>mail: </label>
+                    </td>
+                    <td>
+                        <span class="addressfield">{{user.email}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>address: </label>
+                    </td>
+                    <td >
+                        <span class="addressfield">{{user.address.street}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>suite: </label>
+                    </td>
+                    <td >
+                        <span class="addressfield">{{user.address.suite}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>city: </label>
+                    </td>
+                    <td>
+                        <span class="addressfield">{{user.address.city}}</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </li>
+    </ul>
+</div>
